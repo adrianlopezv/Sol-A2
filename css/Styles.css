@@ -1,0 +1,74 @@
+/********** Base styles **********/
+* {
+  box-sizing: border-box;
+}
+h1 {
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+div#container{
+  position: relative;
+  border: 1px solid black;
+  background-color: #87cefa;
+  margin: 20px;
+  font-family: Helvetica;
+}
+
+#p1 {
+  position: absolute;
+  font-family: Helvetica;
+  border: 1px solid black;
+  margin-top: 0px;
+  margin-right: 0px;
+  right: 0px;
+}
+
+.sushi{
+  background-color: green;
+  color: white;
+}
+
+.pizza{
+  background-color: red;
+  color: black;
+}
+
+.hamb{
+  background-color: yellow;
+  color: black;
+}
+
+/* Simple Responsive Framework. */
+.row {
+  width: 100%;
+}
+
+/********** Large devices only **********/
+@media (min-width: 992px) {
+  .col-lg {
+    float: left;
+    width: 32%;
+  }
+}
+
+/********** Medium devices only **********/
+@media (min-width: 768px) and (max-width: 991px) {
+.col-md-6, .col-md-12 {
+    float: left;
+  }
+  .col-md-6 {
+    width: 50%;
+  }
+  .col-md-12 {
+    width: 100%;
+  }
+}
+
+/********small devices only************/
+@media (max-width: 767px) {
+  .col-sm {
+    float: left;
+    width: 100%;
+  }
+}
